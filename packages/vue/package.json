@@ -1,0 +1,32 @@
+{
+  "name": "@shoal-icons/vue",
+  "version": "0.0.0",
+  "description": "Shoal Icons for Vue 3",
+  "type": "module",
+  "main": "./dist/shoal-icons-vue.cjs.js",
+  "module": "./dist/shoal-icons-vue.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/shoal-icons-vue.es.js",
+      "require": "./dist/shoal-icons-vue.cjs.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build && vue-tsc --declaration --emitDeclarationOnly -p tsconfig.json"
+  },
+  "peerDependencies": {
+    "vue": ">=3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "vite": "^5.4.10",
+    "vue": "^3.5.12",
+    "vue-tsc": "^2.1.10"
+  },
+  "license": "MIT"
+}

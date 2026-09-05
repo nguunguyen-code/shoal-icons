@@ -1,0 +1,19 @@
+{
+  "name": "shoal-icons",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Shoal Icons: a multi-framework SVG icon library (React, Vue, Web Components).",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "build": "npm run generate && npm run build --workspaces",
+    "clean": "rm -rf packages/*/dist packages/*/src/icons"
+  },
+  "devDependencies": {
+    "svgo": "^3.3.2",
+    "typescript": "^5.6.3"
+  },
+  "license": "MIT"
+}
